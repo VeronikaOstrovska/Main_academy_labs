@@ -1,0 +1,93 @@
+header {
+	background: #AA9900;
+	text-align: center;
+	padding: 15px 15px;
+	letter-spacing: 4px;
+	font-weight: bold;
+	font-family: sans-serif;
+
+}
+
+footer {
+	background: #aabbcc; 
+	padding: 15px 15px;
+}
+
+header button,
+footer button{ 
+	padding: 15px 30px;
+	font-size: 30px;
+	background: #ff0015;
+	color: #cc8700;
+	margin: 0 0 0 20px; 
+}
+
+header p {
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: 10px;
+}
+
+button{
+	font-size: 10px;
+	background: #990015;
+	padding: 15px;
+}
+
+.content {
+	margin: 0 0 0 300px;
+	padding: 0 30px;
+}
+
+.section {
+	margin-bottom: 30px;
+}
+
+.content .moreButton {
+	background: #cc9999;
+	border:solid 2px #aa99cc;
+	font-size: 10px;
+}
+
+body {
+	background: url('bg.jpg') no-repeat;
+	background-position: center center;
+
+}
+	 
+.content button {
+	background: #123412;
+	border:solid 2px #000;
+	font-size: 10px;
+}
+
+a {
+	color:blue;
+}
+
+a:visited {
+	color:gray;
+}
+
+ol {
+	list-style: none;
+	margin:0;
+}
+
+ol li {
+	margin-bottom: 15px;
+}
+
+
+ol div {
+	font-size: 10px;
+	color: red;
+}
+
+.sidebar {
+	padding: 15px;
+	float: left;
+	background: #fff;
+	width: 300px;
+	box-sizing: border-box;	
+}
