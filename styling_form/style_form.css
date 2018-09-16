@@ -3,21 +3,21 @@
  }
 
  body{
- 	background: #edeced;
+ 	background: #292929;
  }
 
 h1{
-	background: #115067;
+	background: #ff203d;
 	text-align: center;
 	color: white;
 	padding: 10px 10px;
+	box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
 }
 
 #name {
-	border-radius: 3px;
 	width: 550px;
 	height: 30px;
-}
+	}
 
 #country{
 	border-radius: 5px;
@@ -28,10 +28,11 @@ h1{
  fieldset {
 	font-weight: bold;
 	font-family: sans-serif;
-	margin: 10px 10px;
+	margin: 10px 20px;
 	padding: 10px 10px;
 	background: white;
     border: 1px solid rgba(0,0,0,0.1);
+    
 }
 
 .fl{
@@ -69,10 +70,11 @@ select::-ms-expand {
 
 button{
 	font-size: 20px;
-	background: #00bbff;
-	padding: 15px;
-	margin-left: 400px;
+	background: #ff203d;
+	padding: 15px 20px;
+	margin-left: 380px;
 	color: white;
+	box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(253, 186, 186, .1);
 }
 
 .radio label {
@@ -80,7 +82,7 @@ display: inline-block;
 cursor: pointer;
 position: relative;
 padding-left: 25px;
-margin-right: 15px;
+margin-right: 130px;
 font-size: 13px;
 }
 
@@ -105,15 +107,15 @@ color:#333;
 
 .radio input[type=radio]:checked + label:before{
 content: "\2022";
-color: #f3f3f3;
+color: #fff;
 font-color: blue;
 font-size: 15px;
 text-align: center;
 line-height: 18px;
 }
- 
-.radio1:hover{
-	color:blue;
+
+.radio input[type=radio]:checked + label{
+	color: #ff203d;
 }
 
 .checkbox label {
@@ -143,7 +145,13 @@ box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 2
 content: "\2713";
 text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 font-size: 15px;
-color: #f3f3f3;
+color: #fff;
 text-align: center;
 line-height: 15px;
+
+}
+
+.checkbox input[type=checkbox]:checked + label{
+	color: #ff203d;
+	
 }
