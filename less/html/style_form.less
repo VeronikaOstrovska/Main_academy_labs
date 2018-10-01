@@ -40,10 +40,10 @@ header{
 	}
 	a[href*="tel"] {
 		display: inline-block;
-		margin: 0px 10px;
-		
 		color: #fff;
 		font-size: 20px;
+		 vertical-align: middle;
+		 margin-left: 10px;
 	}
 
 	nav{
@@ -71,10 +71,6 @@ header{
 		           font-size: 20px;
 		         }
 
-		         &.has-child {
-		           border-bottom: 0;
-		         }
-
 		         &:last-child {
 		           border:0;
 		                 
@@ -83,11 +79,15 @@ header{
 		         &:hover {
 		           border-color: #fff;
 		           background: rgba(0,0,0,0.5);
+		           
 		           ul {
 		             display: block;
 		             position: absolute;
 		             left: -3px;
 		             text-align: center;
+		           }
+		           &:first-child{
+		           border-bottom: 0;
 		           }
 		           &:last-child{
 		           	background: none;
@@ -105,13 +105,68 @@ header{
 
 		         li {
 		           display: block;
-		           margin: 5px 0;
 		         }
        		}
        	}
+
+       	#show-form{
+       		display:none;
+       	
+				&:checked{
+					& + label{
+						background-image: url('images/icons/close_1x.png');
+					}
+						
+					& ~ div{
+						display: block;	
+					}
+				}
+
+       			& + label{
+       				display: inline-block;
+       				background: url('images/icons/search_1x.png') no-repeat;
+       				width: 32px;
+       				height: 33px;
+       				background-size: 100% 100%;
+       				cursor: pointer;
+       			}
+
+       			& ~ div{
+       				display:none;
+       				position: absolute;
+       				background: #FFF;
+       				right:0;
+       				top:100%;
+       				padding: 10px;
+       				border: 2px solid red;
+       				width: 400px;
+       				
+       				input, button{
+       					display: inline-block;
+						vertical-align: top;
+						font-size: 18px;
+						line-height: 20px;
+       				}
+
+					form{
+						font-size:0;
+					}
+
+       				button{
+       					width: 100px;
+       					background: #FFF;
+       					border: 1px solid red;
+       				}
+
+       				input{
+       					width: calc(100% - 100px);
+       					
+       				}
+       			}
+       		
+       	}
     }
 }
-
 
 
 
@@ -179,39 +234,43 @@ header{
 
 
 .our_works{
+	font-size:0;
 	.group_our_works{
 		padding:0;
-		margin-left: 25px;
+		margin: 0 15px;
+		
 	}
 	.works{
+		position: relative;
 		display: inline-block;
-		
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		margin: 0 5px;
 		margin-bottom: 30px;
 		font-size: 14px;
-		min-height: 300px;
-		width: calc(100%/3 - (1 - 1/3)*30px);
+		height: 300px;
+		vertical-align: top;
+		width: calc(100%/3 - 10px);
 
-		&:nth-child(7n + 3), &:nth-child(7n + 7){
-			width: calc(2*(100%/3 - (1 - 1/3)*30px) + 13px);
+		&:nth-of-type(7n+2), &:nth-child(7n+6){
+			width: calc(2*(100%/3 - 10px) + 10px);
 		}
 
 		&:hover{
 			.text{
-				opacity: 1;
+				opacity: 1;				
 			}
 		}
 
 		.text{
+			width: 100%;
+			height: 100%;
+			padding: 40px 20px;
+			position: absolute;
 			background: rgba(0,0,0,0.5);
 			color: #fff;
 			font-size: 26px;
-			max-height: 100%;
-			width: 100%;
-			min-height: 100%;
 			text-align:center;
 			transition: all 0.4s linear;
 			opacity:0;
